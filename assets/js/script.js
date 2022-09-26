@@ -1,47 +1,48 @@
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-    for (let button of buttons){
-        button.addEventListener("click", function(){
-        if(this.getAttribute("data-type") === "submit"){
-            alert("You clicked submit!");
-        } else{
-            let gameType = this.getAttribute("data-type");
-            alert('You clicked ${gameType}');
-        }
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked submit!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert('You clicked ${gameType}');
+            }
         })
     }
 
 })
 
 
-function runGame(){
-
-}
-function checkAnswer(){
-
+function runGame() {
+    let num1 = Math.floor(Math.random() * 25)+ 1;
+    let num2 = Math.floor(Math.random() * 25)+ 1;
 }
 
-function calculateCorrectAnswer(){
+function checkAnswer() {
 
 }
 
-function incrementScore(){
+function calculateCorrectAnswer() {
 
 }
 
-function incrementWrongAnswer(){
+function incrementScore() {
 
 }
 
-function displayAdditionQuestion(){
+function incrementWrongAnswer() {
 
 }
 
-function displaySubractQuestion(){
+function displayAdditionQuestion() {
 
 }
 
-function displayMultiplyQuestion(){
+function displaySubractQuestion() {
+
+}
+
+function displayMultiplyQuestion() {
 
 }
